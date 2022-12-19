@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+main {
+    width: 100%;
+}
+.header {
+    display: flex;
+    align-items: center;
+    width: 1550px;
+    max-width: 100%;
+    padding-left: 35px;
+    padding-right: 35px;
+    height: 81px;
+    border: 1px solid #d3c93e;
+    background-color: #e1d6ca;
+}
+header .header-logo {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #695f55;
+}
+.header .navbar_menu {
+    margin-left: auto;
+}
+.header .navbar-item {
+    font-family: "Open Sans", Arial, sans-serif;
+    display: inline-block;
+    position: relative;
+}
+.header .navbar-item a {
+    text-decoration: none;
+    justify-content: center;
+    padding: 8px 15px 33px;
+    font-size: 1rem;
+    color: #6a5b55;
+}
+.header .navbar-item a::before {
+    position: absolute;
+    display: inline-block;
+    left: -5%;
+    top: 1px;
+    content: "|";
+    font-size: small;
+    color: #c7b9ae;
+}
