@@ -1,12 +1,16 @@
 * {
     box-sizing: border-box;
+    text-decoration: none;
+}
 }
 html {
     font-size: 62.5%;
 }
 main {
-    width: 100%;
+    width: 1550px;
+    max-width: 100%;
 }
+/*-------- header ----------*/
 .header {
     display: flex;
     align-items: center;
@@ -22,7 +26,7 @@ header .header-logo {
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 2rem;
     font-weight: 700;
-    color: #695f55;
+    color: #6a5b55 !important;
 }
 .header .navbar_menu {
     margin-left: auto;
@@ -32,11 +36,11 @@ header .header-logo {
     display: inline-block;
     position: relative;
 }
-.header .navbar-item a {
+.header .navbar-item .navbar-title {
     text-decoration: none;
     justify-content: center;
     padding: 11px 7px 33px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: #6a5b55;
 }
 .header .navbar-item .navbar-title::before {
@@ -52,6 +56,7 @@ header .header-logo {
 .header .navbar-item:first-child .navbar-title::before {
     display: none;
 }
+
 .header .navbar-title:nth-child(2) a::after {
     content: "";
     border: 4px solid transparent;
@@ -73,6 +78,7 @@ header .header-logo {
     background-color: #e1d6ca;
     padding: 20px 0;
     left: 7px;
+    z-index: 1;
 }
 .header .sub---item:hover {
     background-color: rgba(0, 0, 0, 0.4);
@@ -85,7 +91,39 @@ header .header-logo {
 
     transition: all 0.5s;
 }
-.header .sub--item .sub---title {
-    display: block;
+.header .sub--menu .sub---title {
+    color: #6a5b55
+}
+/*-------- hero ----------*/
+.hero {
+    background-color: #ebe0d4;
+    padding: 23px 0 50px;
+}
+.hero-center-content {
     position: relative;
+    width: 1080px;
+    height: 105px;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+}
+.hero--info {
+    display: flex;
+    width: 800px;
+    height: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    max-width: 800px;
+    text-align: center;
+}
+.hero--info .hero---title,
+.hero--info .hero---desc {
+    font-family: "Mr Dafoe", cursive;
+    line-height: 1em;
+    font-weight: 500;
+    font-size: 35px;
+    color: #6a5b55 !important;
+    letter-spacing: 2px;
+    justify-items: center;
 }

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Mr Dafoe';
+    src: url('asset/MrDafoe-Regular.woff2') format('woff2'),
+        url('asset/MrDafoe-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
