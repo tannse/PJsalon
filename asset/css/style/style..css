@@ -2,7 +2,6 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-}
 html {
     font-size: 62.5%;
 }
@@ -10,6 +9,12 @@ main {
     width: 1550px;
     max-width: 100%;
 }
+/*-------- common ----------*/
+/* .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
 /*-------- header ----------*/
 .header {
     display: flex;
@@ -57,7 +62,7 @@ header .header-logo {
     display: none;
 }
 
-.header .navbar-title:nth-child(2) a::after {
+.header .navbar-item:nth-child(2) a::after {
     content: "";
     border: 4px solid transparent;
     border-top: 5px solid rgb(123, 101, 101);
@@ -92,12 +97,12 @@ header .header-logo {
     transition: all 0.5s;
 }
 .header .sub--menu .sub---title {
-    color: #6a5b55
+    color: #6a5b55;
 }
 /*-------- hero ----------*/
 .hero {
     background-color: #ebe0d4;
-    padding: 23px 0 50px;
+    padding: 23px 0 10px 50px;
 }
 .hero-center-content {
     position: relative;
@@ -109,6 +114,7 @@ header .header-logo {
 }
 .hero--info {
     display: flex;
+    gap: 12px;
     width: 800px;
     height: 45px;
     margin-left: auto;
@@ -126,4 +132,44 @@ header .header-logo {
     color: #6a5b55 !important;
     letter-spacing: 2px;
     justify-items: center;
+}
+/*-------- guides ----------*/
+.guides {
+    position: relative;
+    height: 746;
+}
+.guides_block {
+    position: absolute;
+    display: flex;
+}
+.guides-group1,
+.guides-group2 {
+    display: flex;
+    position: relative;
+}
+.guides .guides-title-lc {
+    position: absolute;
+    top: 33%;
+    height: 50px;
+    width: 512px;
+    background-color: rgba(235, 224, 212, 0.4);
+}
+.guides .guides-title {
+    text-shadow: 1px 4px 5px rgba(0, 0, 0, 0.6);
+    font-family: "Advent Pro", Helvetica, Arial, Lucida, sans-serif !important;
+    font-size: 2.3rem;
+    text-align: center;
+    color: #f0e0e0;
+    line-height: 1.2;
+    z-index: 1;
+}
+.guides img {
+    filter: brightness(90%);
+    max-width: 100%;
+    width: 529px;
+    height: 375px;
+    object-fit: cover;
+}
+.guides img:hover {
+    filter: brightness(30%);
 }
