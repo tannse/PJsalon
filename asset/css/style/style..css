@@ -5,13 +5,15 @@
 html {
     font-size: 62.5%;
 }
-main {
+.main-content {
     width: 1550px;
-    height: 1500px;
     max-width: 100%;
 }
-/*-------- header ----------*/
-.header {
+body {
+    font-size: 1.6rem;
+}
+/*--------header ----------*/
+.header-fixed {
     display: flex;
     align-items: center;
     padding-left: 35px;
@@ -20,7 +22,7 @@ main {
     border: 1px solid #d3c93e;
     background-color: #e1d6ca;
 }
-header .header-logo {
+.header .header-logo {
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 2rem;
     font-weight: 700;
@@ -54,7 +56,6 @@ header .header-logo {
 .header .navbar-item:first-child .navbar-title::before {
     display: none;
 }
-
 .header .navbar-item:nth-child(2) .navbar-title::after {
     content: "";
     border: 4px solid transparent;
@@ -97,7 +98,7 @@ header .header-logo {
     background-color: #ebe0d4;
     padding: 23px 0 10px 50px;
 }
-.hero-center-content {
+.hero-center {
     position: relative;
     width: 1080px;
     height: 105px;
@@ -127,26 +128,20 @@ header .header-logo {
     justify-items: center;
 }
 /*-------- guides ----------*/
-.main-content {
-    position: relative;
-    height: 746;
-}
-.guides_block {
-    position: absolute;
-}
+
 .guides-group1,
 .guides-group2 {
     display: flex;
     position: relative;
 }
-.main-content .guides-title-lc {
+.guides_block .guides-title-lc {
     position: absolute;
     top: 33%;
     height: 50px;
     width: 512px;
     background-color: rgba(235, 224, 212, 0.4);
 }
-.main-content .guides-title {
+.guides_block .guides-title {
     text-shadow: 1px 4px 5px rgba(0, 0, 0, 0.6);
     font-family: "Advent Pro", Helvetica, Arial, Lucida, sans-serif !important;
     font-size: 2.3rem;
@@ -165,4 +160,107 @@ header .header-logo {
 }
 .main-content img:hover {
     filter: brightness(30%);
+}
+.footer {
+    height: 305px;
+    background-color: black;
+}
+.footer .info {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding-top: 90px;
+}
+.footer .group-info {
+    width: 225.4px;
+    height: 108px;
+}
+.footer .map {
+    display: inline-block;
+    margin: 10px 60px 0;
+    color: #e1d6ca !important;
+}
+.footer .sub-title,
+.footer .desc {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 1.4;
+    color: white;
+}
+.footer .desc {
+    margin-top: 10px;
+}
+.footer .contact {
+    display: inline-block;
+    margin: 10px 38px 0px;
+    justify-content: center;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 1.4;
+    color: #e1d6ca !important;
+}
+.footer .icon {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.footer .facebook {
+    text-align: center;
+    width: 32px;
+    height: 32px;
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+.fa-facebook-f:before {
+    content: "\f39e";
+    display: inline-block;
+    margin-top: 8.5px;
+}
+.footer .instagram {
+    text-align: center;
+    width: 32px;
+    height: 32px;
+    background-color: #ea2c59;
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+.fa-instagram:before {
+    content: "\f16d";
+    display: inline-block;
+    margin: 6px 6px 0;
+}
+.copyright-footer {
+    position: relative;
+    width: 1080px;
+    height: 23.8px;
+    margin-left: 15%;
+    margin-top: 6%;
+}
+.copyright-info {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.copyright-footer .desc,
+.copyright-footer a {
+    align-items: center;
+    margin-top: -35px;
+    font-weight: 700;
+    color: #e1d6ca;
+    font-size: 15px;
+}
+.copyright-footer a {
+    margin-top: -31px;
+    color: rgb(141, 141, 192) !important;
 }
