@@ -6,13 +6,16 @@ html {
     font-size: 62.5%;
 }
 .main-content {
-    width: 1550px;
+    width: 1903px;
     max-width: 100%;
 }
 body {
     font-size: 1.6rem;
 }
 /*--------header ----------*/
+.header {
+    background-color: #e1d6ca;
+}
 .header-fixed {
     display: flex;
     align-items: center;
@@ -136,11 +139,12 @@ body {
 }
 .guides_block .guides-title-lc {
     position: absolute;
-    top: 33%;
-    height: 50px;
-    width: 512px;
+    top: 35%;
+    height: 51px;
+    width: 635px;
     background-color: rgba(235, 224, 212, 0.4);
 }
+
 .guides_block .guides-title {
     text-shadow: 1px 4px 5px rgba(0, 0, 0, 0.6);
     font-family: "Advent Pro", Helvetica, Arial, Lucida, sans-serif !important;
@@ -153,7 +157,7 @@ body {
 .main-content img {
     filter: brightness(80%);
     max-width: 100%;
-    width: 529px;
+    width: 634px;
     height: 375px;
     object-fit: cover;
     border-image: fill;
@@ -242,7 +246,7 @@ body {
 }
 .copyright-footer {
     position: relative;
-    width: 1080px;
+    width: 1903px;
     height: 23.8px;
     margin-left: 15%;
     margin-top: 6%;
