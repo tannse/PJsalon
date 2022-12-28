@@ -248,7 +248,7 @@ body {
     position: relative;
     width: 1903px;
     height: 23.8px;
-    margin-left: 15%;
+    margin-left: auto;
     margin-top: 6%;
 }
 .copyright-info {
@@ -260,11 +260,11 @@ body {
 .copyright-footer a {
     align-items: center;
     margin-top: -35px;
-    font-weight: 700;
+    font-weight: 500;
     color: #e1d6ca;
-    font-size: 15px;
+    font-size: 20px;
 }
 .copyright-footer a {
     margin-top: -31px;
-    color: rgb(141, 141, 192) !important;
+    color: rgb(226, 226, 231) !important;
 }
